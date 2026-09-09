@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { Mail, ArrowRight, MapPin } from "lucide-react";
 import { toast } from "sonner";
 import { usePageMeta } from "@/hooks/usePageMeta";
-import { submitContact } from "@/lib/api";
+import { HAS_BACKEND, submitContact, mailtoContact } from "@/lib/api";
 
 const EASE = [0.16, 1, 0.3, 1];
 
@@ -23,6 +23,12 @@ const Support = () => {
   const onSubmit = async (e) => {
     e.preventDefault();
     if (loading) return;
+    if (!HAS_BACKEND) {
+      mailtoContact(form);
+      toast.success("Opening your email app — just press send.");
+      setForm({ name: "", email: "", message: "" });
+      return;
+    }
     setLoading(true);
     try {
       await submitContact(form);

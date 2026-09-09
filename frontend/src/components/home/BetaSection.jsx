@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { Apple, Play, ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
 import { toast } from "sonner";
-import { submitBeta } from "@/lib/api";
+import { HAS_BACKEND, submitBeta, mailtoBeta } from "@/lib/api";
 
 const EASE = [0.16, 1, 0.3, 1];
 
@@ -19,6 +19,12 @@ const BetaSection = () => {
   const onSubmit = async (e) => {
     e.preventDefault();
     if (loading) return;
+    if (!HAS_BACKEND) {
+      mailtoBeta(form);
+      toast.success("Opening your email app — just press send.");
+      setForm({ name: "", email: "", farm_name: "", message: "" });
+      return;
+    }
     setLoading(true);
     try {
       await submitBeta(form);
