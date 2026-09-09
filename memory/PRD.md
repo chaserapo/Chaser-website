@@ -50,8 +50,11 @@ preview URL first, custom domain later.
   Calculators & Tools screens (optimized copies in public/assets/screens/)
 
 ## Backlog
-- P0: Deploy + connect custom domain chaserag.com.au (DNS: exact A/CNAME values come
-  from the Emergent custom-domain panel at deploy time; typically CNAME for www and
-  A record for @)
+- DONE (Sep 2026): external hosting — repo pushed to github.com/chaserapo/Chaser-website
+  via Emergent Save-to-GitHub; deployed on Vercel free tier (root dir frontend, CRA preset);
+  custom domain chaserag.com.au + www live with Let's Encrypt HTTPS; /privacy /terms
+  /support all return 200 on the domain; forms use mailto fallback on Vercel
+  (Emergent preview still uses backend + managed email). DNS at VentraIP: A @ 76.76.21.21,
+  CNAME www cname.vercel-dns.com (parking records removed).
 - P1: Activate App Store / Google Play buttons at launch
 - P2: Founder note / about snippet for trust; OG share image; analytics
