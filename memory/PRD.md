@@ -39,14 +39,14 @@ preview URL first, custom domain later.
   "coming soon" badges, full footer with entity + ABN + legal links
 - Privacy Policy page with the app's REAL policy text (pasted by user) incl. ABN,
   APPs, Supabase/Resend/Open-Meteo sub-processors, OAIC complaints path
-- Terms of Use page — PLACEHOLDER text drafted by agent, awaiting user's real in-app Terms
+- Terms of Use page with the app's REAL terms text (pasted by user) incl. agricultural
+  disclaimer, APVMA/label obligations, limitation of liability, WA governing law
 - Support page: chaserapp@outlook.com prominent + working contact form
 - Sticky glassmorphic header, mobile drawer, per-page titles/meta, favicon,
   HTTPS via preview domain, Lenis smooth scroll, grain overlay, data-testids throughout
 - Emails verified sending (owner notification + beta confirmation)
 
 ## Backlog
-- P0: Replace Terms of Use placeholder with the app's real Terms text (user to paste)
 - P0: Deploy + connect custom domain chaserag.com.au (DNS: exact A/CNAME values come
   from the Emergent custom-domain panel at deploy time; typically CNAME for www and
   A record for @)

@@ -1,46 +1,60 @@
 import { usePageMeta } from "@/hooks/usePageMeta";
 import { motion } from "framer-motion";
 
+const INTRO =
+  "These Terms govern your use of Chaser. By creating an account or using Chaser you agree to these Terms. Chaser is operated by Midwest Ag Supplies (ABN 21 510 804 128), Morley, WA 6032, Australia. This document is provided for the Beta program only.";
+
 const SECTIONS = [
   {
-    title: "1. Agreement",
-    body: "These Terms of Use govern your use of the Chaser mobile app and website, operated by Midwest Ag Supplies, Western Australia, Australia. By using Chaser, you agree to these terms.",
+    title: "1. What Chaser is",
+    body: "Chaser is a record-keeping and workflow tool that helps you plan, run and log farm spraying and machinery operations. Chaser is a productivity tool — it is not an agronomist, not a chemical adviser, and not a regulatory reporting system.",
   },
   {
-    title: "2. The service",
-    body: "Chaser is an agricultural operations tool that helps farming businesses organise paddocks, jobs, people and day-to-day work. Chaser is currently in beta: features may change, and the service may be interrupted or unavailable from time to time as we improve it.",
+    title: "2. Agricultural disclaimer — read carefully",
+    paragraphs: [
+      "IMPORTANT. Chaser does not provide agronomic advice, product recommendations, dose calculations that override the product label, or any suggestion of whether a spray is safe, effective or legal in your circumstances.",
+      "Every product, rate, unit, weather threshold and spray decision you enter is your own decision. You must always:",
+    ],
+    bullets: [
+      "follow the current registered product label,",
+      "follow APVMA, state and local regulations,",
+      "follow all applicable off-label / permit conditions,",
+      "consider weather conditions, spray drift, temperature inversions and buffer zones, and",
+      "seek qualified agronomic advice where appropriate.",
+    ],
+    after: "Chaser's calculators (spray rate, tank mix, delta-T, nozzle guide) are provided as convenience utilities. Outputs are indicative only. Always verify against your own measurements before making purchases, applications or compliance submissions.",
   },
   {
-    title: "3. Your account",
-    body: "You are responsible for keeping your account details confidential and for activity under your account. You must provide accurate information when registering and keep it up to date.",
+    title: "3. GPS, weather and area figures",
+    body: "GPS-captured coordinates, drive-recorded paddock boundaries, hectare calculations, and weather values retrieved from Open-Meteo are indicative only. Verify against ground truth or a qualified surveyor before using them for compliance, insurance, chemical procurement or legal purposes.",
   },
   {
-    title: "4. Acceptable use",
-    body: "You agree to use Chaser lawfully and not to misuse the service — including attempting to access data that isn't yours, interfering with the service, or using it to store or share unlawful content.",
+    title: "4. Your account & team",
+    body: "You are responsible for keeping your login secure and for the actions of everyone you invite to your farm business. Owners can invite, remove and change the roles of team members. Removing a member revokes their access to the business's data immediately.",
   },
   {
-    title: "5. Your data",
-    body: "You retain ownership of the data you put into Chaser — your paddocks, jobs and operational records. You grant us the limited right to store and process that data solely to provide and improve the service to you.",
+    title: "5. Acceptable use",
+    body: "You will not: (a) upload data you don't have the right to store, (b) use Chaser to breach agricultural, environmental or chemical regulations, (c) attempt to bypass row-level security or access another business's data, (d) reverse engineer or scrape the service, or (e) resell access to Chaser without our written consent.",
   },
   {
-    title: "6. Our intellectual property",
-    body: "The Chaser app, website, branding and underlying software belong to Midwest Ag Supplies. These terms don't give you any rights to our intellectual property except to use the service as intended.",
+    title: "6. Availability",
+    body: 'Chaser is provided "as is" during Beta. We aim for high availability but do not guarantee uninterrupted service. Planned maintenance, network outages, or upstream provider outages (Supabase, Open-Meteo, Resend) may temporarily interrupt access. Chaser stores an offline copy of your active spray job so a temporary outage does not lose your data.',
   },
   {
-    title: "7. No professional advice",
-    body: "Chaser is an organisational tool. It does not provide agronomic, chemical, safety or legal advice. Operational decisions remain yours — always follow product labels, regulations and professional advice.",
+    title: "7. Limitation of liability",
+    body: "To the maximum extent permitted by Australian law, Chaser is not liable for any loss (including loss of crop, revenue, business, data, chemical spend, drift damage, regulatory penalty or personal injury) arising from your use of Chaser or from any decision you made in reliance on information displayed by Chaser. Nothing in these Terms excludes any non-excludable statutory rights you may have under the Australian Consumer Law.",
   },
   {
-    title: "8. Liability",
-    body: "To the extent permitted by law, we exclude liability for indirect or consequential loss arising from use of the service. Nothing in these terms excludes rights you have under the Australian Consumer Law that cannot be excluded.",
+    title: "8. Termination",
+    body: "You may stop using Chaser and request deletion of your data at any time by contacting chaserapp@outlook.com. We may suspend or terminate an account that breaches these Terms, subject to reasonable notice unless there is an active security or legal issue.",
   },
   {
-    title: "9. Termination",
-    body: "You can stop using Chaser at any time. We may suspend or end access where these terms are breached, with notice where practical.",
+    title: "9. Governing law",
+    body: "These Terms are governed by the laws of Western Australia, Australia. You submit to the non-exclusive jurisdiction of the courts of Western Australia and Australia.",
   },
   {
-    title: "10. Governing law & contact",
-    body: "These terms are governed by the laws of Western Australia. Questions? Email chaserapp@outlook.com — Midwest Ag Supplies, Western Australia, Australia.",
+    title: "10. Changes to these Terms",
+    body: "We will announce material changes inside the app. Continued use of Chaser after a change means you accept the updated Terms.",
   },
 ];
 
@@ -61,7 +75,10 @@ const Terms = () => {
         <h1 className="mt-4 font-display text-4xl font-black tracking-tight text-ink sm:text-5xl">
           Terms of Use
         </h1>
-        <p className="mt-3 text-sm text-sage">Last updated: July 2026 · Applies to the Chaser app and this website</p>
+        <p className="mt-3 text-sm text-sage">
+          Beta program · Applies to the Chaser app and this website
+        </p>
+        <p className="mt-6 leading-relaxed text-sage">{INTRO}</p>
       </motion.div>
 
       <div className="mt-12 space-y-10">
@@ -72,11 +89,55 @@ const Terms = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-40px" }}
             transition={{ duration: 0.5, delay: 0.03 * i }}
+            className={
+              s.title.startsWith("2.")
+                ? "rounded-3xl border border-gold/40 bg-gold/5 p-6 sm:p-8"
+                : undefined
+            }
           >
             <h2 className="font-display text-xl font-bold text-pine">{s.title}</h2>
-            <p className="mt-3 leading-relaxed text-sage">{s.body}</p>
+            {s.body && <p className="mt-3 leading-relaxed text-sage">{s.body}</p>}
+            {s.paragraphs &&
+              s.paragraphs.map((p) => (
+                <p key={p.slice(0, 32)} className="mt-3 leading-relaxed text-sage">
+                  {p}
+                </p>
+              ))}
+            {s.bullets && (
+              <ul className="mt-3 list-disc space-y-2.5 pl-5 leading-relaxed text-sage marker:text-gold">
+                {s.bullets.map((b) => (
+                  <li key={b.slice(0, 32)}>{b}</li>
+                ))}
+              </ul>
+            )}
+            {s.after && <p className="mt-3 leading-relaxed text-sage">{s.after}</p>}
           </motion.section>
         ))}
+
+        <motion.section
+          initial={{ opacity: 0, y: 16 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-40px" }}
+          transition={{ duration: 0.5 }}
+          className="rounded-3xl border border-creamline bg-sand/70 p-8"
+          data-testid="terms-contact-block"
+        >
+          <h2 className="font-display text-xl font-bold text-pine">Contact</h2>
+          <p className="mt-3 leading-relaxed text-sage">
+            Midwest Ag Supplies (Chaser)
+            <br />
+            ABN 21 510 804 128
+            <br />
+            Morley, WA 6032, Australia
+            <br />
+            <a
+              href="mailto:chaserapp@outlook.com"
+              className="font-semibold text-goldhover underline decoration-gold/40 underline-offset-4 transition-colors duration-200 hover:text-gold"
+            >
+              chaserapp@outlook.com
+            </a>
+          </p>
+        </motion.section>
       </div>
     </div>
   );
