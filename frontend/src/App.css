@@ -1,0 +1,22 @@
+@keyframes chaser-marquee {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+}
+
+.marquee-track {
+    animation: chaser-marquee 48s linear infinite;
+}
+
+.marquee-track:hover {
+    animation-play-state: paused;
+}
+
+::selection {
+    background: #C89542;
+    color: #132E20;
+}
+
+.text-outline {
+    -webkit-text-stroke: 1.5px #C89542;
+    color: transparent;
+}

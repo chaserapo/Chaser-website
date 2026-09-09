@@ -1,0 +1,130 @@
+{
+  "brand": {
+    "name": "Chaser",
+    "tagline": "Behind every good operation.",
+    "entity": "Midwest Ag Supplies",
+    "location": "Western Australia",
+    "contact_email": "chaserapp@outlook.com",
+    "short_description": "Chaser helps farming operations organise paddocks, jobs, people and day-to-day work from one simple app."
+  },
+  "theme": {
+    "mode": "light",
+    "archetype": "ORGANIC_AND_EARTHY",
+    "colors": {
+      "bg_primary": "#F9F7F1",
+      "bg_surface": "#FFFFFF",
+      "bg_surface_alt": "#F2EFE6",
+      "bg_dark_section": "#132E20",
+      "text_primary": "#1A261D",
+      "text_muted": "#526356",
+      "text_light": "#ECE8DC",
+      "brand_green": "#1E3A2B",
+      "brand_green_hover": "#152B1F",
+      "accent_gold": "#C89542",
+      "accent_gold_muted": "#E8D8B6",
+      "accent_gold_hover": "#B38232",
+      "border_light": "#E2DDCF",
+      "border_dark": "#244735",
+      "status_success": "#2D6A4F"
+    }
+  },
+  "typography": {
+    "heading_font": "Cabinet Grotesk / Syne / Serif Editorial Display",
+    "body_font": "Plus Jakarta Sans / Inter",
+    "mono_font": "JetBrains Mono",
+    "hierarchy": {
+      "hero_h1": "text-4xl sm:text-5xl lg:text-6xl font-black tracking-tight leading-[1.08]",
+      "section_h2": "text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight leading-tight",
+      "manifesto_title": "text-2xl sm:text-3xl font-bold tracking-tight",
+      "card_title": "text-xl font-bold tracking-tight",
+      "body_lead": "text-lg sm:text-xl font-normal leading-relaxed text-[#526356]",
+      "body_regular": "text-base font-normal leading-relaxed text-[#526356]",
+      "caption": "text-xs uppercase tracking-[0.2em] font-mono text-[#C89542]"
+    }
+  },
+  "motion_and_effects": {
+    "scroll": "Lenis smooth scrolling integration",
+    "hero_animation": "Masked line-by-line reveal using Framer Motion with subtle 3D tilt/parallax on product showcase frame",
+    "manifesto_scroll": "Staggered scroll-triggered fade & slide for numbered chapters (01 to 05)",
+    "marquee": "Slow editorial text ribbon drifting gently with organic ag phrases",
+    "hover_states": "All buttons, tabs, interactive paddock pins, and links must have explicit transition states (bg-color, border, scale)",
+    "micro_interactions": "Interactive paddock boundary pin selector, tabbed app feature mockups, responsive toast notification on form submission via Sonner"
+  },
+  "pages_and_routes": {
+    "home": {
+      "sections": [
+        "Header Nav (Sticky Glassmorphic Header with logo, nav links, Beta CTA, mobile drawer)",
+        "Kinetic Hero (Masked line reveal, badge, tagline, short description, CTAs: 'Join the Beta' & 'Contact Us', floating paddock stats pill, 3D Parallax App Phone Frame)",
+        "Slow Editorial Marquee Ribbon ('BEHIND EVERY GOOD OPERATION • PADDOCK BOUNDARIES • JOB TRACKING • REAL AG OPERATIONS • WESTERN AUSTRALIA')",
+        "Built for the Paddock Benefits (Numbered Manifesto Chapters 01 to 05 with visual spotlight, interactive paddock preview, and high-impact editorial typography)",
+        "App Screenshots & Interactive Feature Tour (Tabbed device frame showcasing Paddock Mapping, Job Planning, Team Visibility, and Offline Ag Sync)",
+        "Why Chaser? (4-Column Bento/Grid highlighting Simplicity, Less Paperwork, Better Communication, Organised Operation)",
+        "Beta Interest Section ('Chaser is currently in beta' + interactive sign-up form with name, email, farm/business name, optional message + Sonner toast feedback)",
+        "Footer (Entity details for Midwest Ag Supplies, WA, contact, legal links for Privacy Policy, Terms of Use, Support)"
+      ]
+    },
+    "privacy_policy": {
+      "title": "Privacy Policy - Chaser Ag App",
+      "description": "Privacy practices and data protection policy for Chaser app users and Midwest Ag Supplies customers."
+    },
+    "terms_of_use": {
+      "title": "Terms of Use - Chaser Ag App",
+      "description": "Terms and conditions governing the use of the Chaser agricultural operations mobile app and website."
+    },
+    "support": {
+      "title": "Support & Contact - Chaser Ag App",
+      "description": "Get support, ask questions, or inquire about the Chaser beta testing program."
+    }
+  },
+  "image_urls": {
+    "hero_farmer": "https://images.unsplash.com/photo-1586819158505-d7f6227d19d4?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzNTl8MHwxfHNlYXJjaHw0fHxfYXJtZXIlMjBpbiUyMGZpZWxkJTIwaG9sZGluZyUyMHNtYXJ0cGhvbmUlMjB0YWJsZXQlMjBwYWRkb2NrfGVufDB8fHx8MTc4ODk0NTYxNHww&ixlib=rb-4.1.0&q=85",
+    "paddock_field_sunset": "https://images.unsplash.com/photo-1666631740049-5643ffd94b7c?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxODF8MHwxfHNlYXJjaHwyfHx3aGVhdCUyMGZpZWxkJTIwYWdyaWN1bHR1cmUlMjBzdW5zZXQlMjBsYW5kc2NhcGV8ZW58MHx8fHwxNzg4OTQ1NjIxfDA&ixlib=rb-4.1.0&q=85",
+    "wheat_landscape": "https://images.unsplash.com/photo-1588186879741-889eb26e549f?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxODF8MHwxfHNlYXJjaHw0fHx3aGVhdCUyMGZpZWxkJTIwYWdyaWN1bHR1cmUlMjBzdW5zZXQlMjBsYW5kc2NhcGV8ZW58MHx8fHwxNzg4OTQ1NjIxfDA&ixlib=rb-4.1.0&q=85",
+    "farmer_in_crops": "https://images.unsplash.com/photo-1741874299706-2b8e16839aaa?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzNTl8MHwxfHNlYXJjaHwxfHxmYXJtZXIlMjBpbiUyMGZpZWxkJTIwaG9sZGluZyUyMHNtYXJ0cGhvbmUlMjB0YWJsZXQlMjBwYWRkb2NrfGVufDB8fHx8MTc4ODk0NTYxNHww&ixlib=rb-4.1.0&q=85"
+  },
+  "data_testid_guidelines": {
+    "rules": "All interactive buttons, links, inputs, form submissions, navigation items, page links, and tab selectors MUST have explicit data-testid attributes formatted in kebab-case.",
+    "examples": [
+      "data-testid=\"nav-logo\"",
+      "data-testid=\"nav-link-home\"",
+      "data-testid=\"nav-link-privacy\"",
+      "data-testid=\"nav-link-terms\"",
+      "data-testid=\"nav-link-support\"",
+      "data-testid=\"hero-join-beta-button\"",
+      "data-testid=\"hero-contact-us-button\"",
+      "data-testid=\"beta-form-name-input\"",
+      "data-testid=\"beta-form-email-input\"",
+      "data-testid=\"beta-form-farm-name-input\"",
+      "data-testid=\"beta-form-message-input\"",
+      "data-testid=\"beta-form-submit-button\"",
+      "data-testid=\"support-form-submit-button\"",
+      "data-testid=\"footer-privacy-link\"",
+      "data-testid=\"footer-terms-link\"",
+      "data-testid=\"footer-support-link\"",
+      "data-testid=\"app-store-coming-soon-button\"",
+      "data-testid=\"google-play-coming-soon-button\""
+    ]
+  },
+  "instructions_to_main_agent": [
+    "Build a multi-page React application with React Router (Home, Privacy Policy, Terms of Use, Support/Contact).",
+    "Use Lenis for smooth momentum scrolling and Framer Motion for kinetic line-by-line reveals, scroll triggers, and tab transitions.",
+    "Apply the Light & Earthy palette consistently: Warm off-white background (#F9F7F1), deep forest green (#1E3A2B), wheat-gold highlights (#C89542).",
+    "Ensure Header navigation is sticky with crystal glassmorphism (backdrop-blur-md bg-[#F9F7F1]/85 border-b border-[#E2DDCF]/60). Never transparent.",
+    "Implement the 'Built for the paddock' benefits section as numbered manifesto chapters (01 Farm & paddock management, 02 Job planning & tracking, 03 Mapping & paddock boundaries, 04 Simple team visibility, 05 Works with real ag operations).",
+    "Implement realistic interactive mobile app screenshots placeholders with tabbed navigation (Paddock Map, Job Board, Team Activity, Equipment Sync) inside custom SVG mobile device mockups.",
+    "Include app store badges (iOS App Store & Google Play) styled cleanly in 'Beta / Launching Soon' state.",
+    "Build fully functional forms (Beta Interest Form on Home, Support Form on Support page) connected to Sonner toast notifications and form validation.",
+    "All interactive elements must carry proper data-testid attributes for automated testing."
+  ],
+  "UNIVERSAL GUIDELINES FOR MAIN AGENT": [
+    "Avoid generic AI slop centered layouts, plain white backgrounds, or default Vercel templates.",
+    "Create depth through layered design elements with z-index hierarchy.",
+    "Use glass-morphism effects with backdrop filters (12-24px blur).",
+    "MUST NOT apply universal transitions like 'transition: all'. Always specify properties (e.g. 'transition: transform 0.2s ease, opacity 0.2s ease').",
+    "MUST NOT center align the main app container globally.",
+    "Always use modern pill-shaped or sharp tailored buttons with interactive hover/focus states.",
+    "NEVER use AI assistant emoji characters like 🤖🧠💭💡🔮🎯 for UI icons. Use Lucide icons or SVG vectors.",
+    "Use 2-3x generous spacing between sections (py-20 to py-32) for premium breathing room.",
+    "Add subtle noise overlays, grain textures, and custom border highlights to give the app a organic, physical touch."
+  ]
+}
