@@ -45,11 +45,13 @@ preview URL first, custom domain later.
 - Sticky glassmorphic header, mobile drawer, per-page titles/meta, favicon,
   HTTPS via preview domain, Lenis smooth scroll, grain overlay, data-testids throughout
 - Emails verified sending (owner notification + beta confirmation)
+- Real app screenshots integrated (July 2026): hero phone frame shows the live app
+  dashboard; tabbed showcase with Spray Jobs, Spray Record, Machinery and
+  Calculators & Tools screens (optimized copies in public/assets/screens/)
 
 ## Backlog
 - P0: Deploy + connect custom domain chaserag.com.au (DNS: exact A/CNAME values come
   from the Emergent custom-domain panel at deploy time; typically CNAME for www and
   A record for @)
-- P1: Swap screenshot placeholders for real App Store screenshots
 - P1: Activate App Store / Google Play buttons at launch
 - P2: Founder note / about snippet for trust; OG share image; analytics

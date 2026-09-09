@@ -1,30 +1,41 @@
 import { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
-import { MapPinned, ClipboardList, Users, ImagePlus } from "lucide-react";
+import { ClipboardList, QrCode, Tractor, Calculator } from "lucide-react";
 
 const EASE = [0.16, 1, 0.3, 1];
 
 const TABS = [
   {
-    id: "map",
-    label: "Paddock Map",
-    desc: "Boundaries and paddock status at a glance, wherever you're standing.",
-    icon: MapPinned,
-    testid: "screenshot-tab-map",
-  },
-  {
     id: "jobs",
-    label: "Job Board",
-    desc: "Plan, assign and tick off work as it gets done across the farm.",
+    label: "Spray Jobs",
+    desc: "Plan, start and track spray jobs across every paddock — planned, in progress, done.",
     icon: ClipboardList,
+    img: "/assets/screens/spray-jobs.jpg",
     testid: "screenshot-tab-jobs",
   },
   {
-    id: "team",
-    label: "Team View",
-    desc: "Who's doing what and where — without the phone calls.",
-    icon: Users,
-    testid: "screenshot-tab-team",
+    id: "record",
+    label: "Spray Record",
+    desc: "Every job logged with weather, operator, area and a QR sign-off for agronomists and auditors.",
+    icon: QrCode,
+    img: "/assets/screens/spray-record.jpg",
+    testid: "screenshot-tab-record",
+  },
+  {
+    id: "machinery",
+    label: "Machinery",
+    desc: "Fleet hours and servicing at a glance, with due-soon and overdue flags before they cost you.",
+    icon: Tractor,
+    img: "/assets/screens/machinery.jpg",
+    testid: "screenshot-tab-machinery",
+  },
+  {
+    id: "tools",
+    label: "Calculators & Tools",
+    desc: "Delta-T, spray rate, tank mix and nozzle selection built in — no juggling separate apps.",
+    icon: Calculator,
+    img: "/assets/screens/tools.jpg",
+    testid: "screenshot-tab-tools",
   },
 ];
 
@@ -81,13 +92,12 @@ const Screenshots = () => {
               );
             })}
             <p className="pt-2 text-xs text-sage/70">
-              Placeholder frames — real App Store screenshots drop in here before launch.
+              Straight from the beta build — no mockups.
             </p>
           </div>
 
           <div className="flex justify-center">
-            <div className="relative aspect-[9/19] w-[270px] overflow-hidden rounded-[2.8rem] border-[10px] border-ink bg-white shadow-2xl sm:w-[300px]">
-              <div className="absolute left-1/2 top-2 z-10 h-5 w-24 -translate-x-1/2 rounded-full bg-ink" />
+            <div className="relative flex h-[520px] w-[270px] items-center overflow-hidden rounded-[2.8rem] border-[10px] border-ink bg-[#F4F6F5] shadow-2xl sm:h-[580px] sm:w-[300px]">
               <AnimatePresence mode="wait">
                 <motion.div
                   key={active.id}
@@ -95,30 +105,14 @@ const Screenshots = () => {
                   animate={{ opacity: 1, y: 0 }}
                   exit={{ opacity: 0, y: -16 }}
                   transition={{ duration: 0.35, ease: EASE }}
-                  className="flex h-full flex-col items-center justify-center p-6 pt-12"
-                  data-testid="screenshot-placeholder"
+                  className="w-full"
+                  data-testid="screenshot-frame-image"
                 >
-                  <div className="flex w-full flex-1 flex-col items-center justify-center rounded-2xl border-2 border-dashed border-pine/30 bg-sand/70 p-6 text-center">
-                    <img
-                      src="/assets/chaser-icon.jpeg"
-                      alt=""
-                      className="h-14 w-14 rounded-2xl shadow-sm"
-                    />
-                    <active.icon className="mt-5 h-7 w-7 text-gold" />
-                    <p className="mt-3 font-display text-base font-bold text-pine">
-                      {active.label}
-                    </p>
-                    <p className="mt-2 flex items-center gap-1.5 text-xs text-sage">
-                      <ImagePlus className="h-3.5 w-3.5" />
-                      Screenshot placeholder
-                    </p>
-                    <p className="mt-1 text-[11px] text-sage/70">
-                      Replace with your App Store screenshot (1290 × 2796)
-                    </p>
-                  </div>
-                  <p className="mt-4 font-mono text-[10px] uppercase tracking-[0.18em] text-sage">
-                    Chaser · iOS & Android
-                  </p>
+                  <img
+                    src={active.img}
+                    alt={`${active.label} — Chaser app screenshot`}
+                    className="max-h-full w-full object-contain"
+                  />
                 </motion.div>
               </AnimatePresence>
             </div>

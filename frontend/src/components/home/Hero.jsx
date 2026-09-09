@@ -18,57 +18,12 @@ const MaskedLine = ({ children, delay, className = "" }) => (
 );
 
 const PhoneMock = () => (
-  <div className="relative aspect-[9/19] w-[270px] overflow-hidden rounded-[2.8rem] border-[10px] border-ink bg-sand shadow-2xl sm:w-[300px]">
-    <div className="absolute left-1/2 top-2 z-10 h-5 w-24 -translate-x-1/2 rounded-full bg-ink" />
-    <div className="flex h-full flex-col p-4 pt-11">
-      <div className="flex items-center justify-between">
-        <div className="flex items-center gap-2">
-          <img src="/assets/chaser-icon.jpeg" alt="" className="h-7 w-7 rounded-md" />
-          <span className="font-display text-sm font-extrabold text-pine">Chaser</span>
-        </div>
-        <span className="rounded-full bg-gold/20 px-2 py-0.5 font-mono text-[10px] font-medium uppercase tracking-wider text-goldhover">
-          Beta
-        </span>
-      </div>
-      <p className="mt-5 font-display text-lg font-bold leading-tight text-ink">
-        Mullewa HQ
-      </p>
-      <p className="text-xs text-sage">Tuesday · 3 jobs due today</p>
-
-      <div className="mt-4 space-y-2.5">
-        {[
-          { name: "Paddock 14", crop: "Lupins · Seeding", status: "In progress", tone: "bg-pine text-cream" },
-          { name: "North 40", crop: "Wheat · Spraying", status: "Scheduled", tone: "bg-gold/20 text-goldhover" },
-          { name: "River Flat", crop: "Barley · Spreading", status: "Done", tone: "bg-sand text-sage" },
-        ].map((c) => (
-          <div key={c.name} className="rounded-xl border border-creamline bg-white p-3 shadow-sm">
-            <div className="flex items-center justify-between">
-              <p className="text-xs font-bold text-ink">{c.name}</p>
-              <span className={`rounded-full px-2 py-0.5 text-[10px] font-semibold ${c.tone}`}>
-                {c.status}
-              </span>
-            </div>
-            <p className="mt-1 text-[11px] text-sage">{c.crop}</p>
-          </div>
-        ))}
-      </div>
-
-      <div className="relative mt-3 flex-1 overflow-hidden rounded-xl border border-creamline bg-pine/5">
-        <div
-          className="absolute inset-0 opacity-40"
-          style={{
-            backgroundImage:
-              "linear-gradient(#1E3A2B22 1px, transparent 1px), linear-gradient(90deg, #1E3A2B22 1px, transparent 1px)",
-            backgroundSize: "22px 22px",
-          }}
-        />
-        <div className="absolute left-[30%] top-[35%] h-3 w-3 rounded-full border-2 border-white bg-gold shadow" />
-        <div className="absolute left-[62%] top-[60%] h-3 w-3 rounded-full border-2 border-white bg-pine shadow" />
-        <p className="absolute bottom-2 left-3 font-mono text-[9px] uppercase tracking-wider text-sage">
-          3 paddocks active
-        </p>
-      </div>
-    </div>
+  <div className="relative aspect-[3/4] w-[270px] overflow-hidden rounded-[2.8rem] border-[10px] border-ink bg-[#F4F6F5] shadow-2xl sm:w-[300px]">
+    <img
+      src="/assets/screens/dashboard.jpg"
+      alt="Chaser app home screen showing live spraying conditions"
+      className="h-full w-full object-cover object-top"
+    />
   </div>
 );
 
