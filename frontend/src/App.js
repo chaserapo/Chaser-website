@@ -5,6 +5,7 @@ import Lenis from "lenis";
 import { Toaster } from "@/components/ui/sonner";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import FeedbackWidget from "@/components/FeedbackWidget";
 import Home from "@/pages/Home";
 import Privacy from "@/pages/Privacy";
 import Terms from "@/pages/Terms";
@@ -58,6 +59,7 @@ function App() {
         </main>
         <Footer />
       </BrowserRouter>
+      <FeedbackWidget />
       <Toaster position="top-center" richColors />
     </div>
   );

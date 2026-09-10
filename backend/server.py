@@ -140,6 +140,7 @@ class ContactMessage(BaseModel):
     name: str = Field(min_length=1, max_length=120)
     email: EmailStr
     message: str = Field(min_length=1, max_length=2000)
+    topic: Optional[str] = Field(default=None, max_length=80)
 
 
 def _table(rows: list[tuple[str, str]], note: str) -> str:
@@ -226,8 +227,9 @@ async def contact(input: ContactMessage):
     )
 
     email_sent = True
+    topic = input.topic or "support enquiry"
     try:
-        await send_email(to=OWNER_EMAIL, subject=f"Chaser support enquiry — {input.name}", html=owner_html)
+        await send_email(to=OWNER_EMAIL, subject=f"Chaser {topic} — {input.name}", html=owner_html)
     except HTTPException:
         email_sent = False
         logger.error(f"Contact email delivery failed for submission {doc['id']}")

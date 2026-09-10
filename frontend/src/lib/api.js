@@ -17,8 +17,8 @@ export const mailtoBeta = ({ name, email, farm_name, message }) => {
   window.location.href = `mailto:${SITE_EMAIL}?subject=${subject}&body=${body}`;
 };
 
-export const mailtoContact = ({ name, email, message }) => {
-  const subject = encodeURIComponent(`Chaser support enquiry — ${name}`);
+export const mailtoContact = ({ name, email, message, topic }) => {
+  const subject = encodeURIComponent(`Chaser ${topic || "support enquiry"} — ${name}`);
   const body = encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\n${message}`);
   window.location.href = `mailto:${SITE_EMAIL}?subject=${subject}&body=${body}`;
 };
