@@ -25,15 +25,12 @@ const Header = () => {
   return (
     <header className="sticky top-0 z-50 border-b border-creamline/60 bg-cream/85 backdrop-blur-md">
       <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6">
-        <Link to="/" data-testid="nav-logo" className="flex items-center gap-2.5">
+        <Link to="/" data-testid="nav-logo" className="flex items-center">
           <img
-            src="/assets/chaser-icon.jpeg"
-            alt="Chaser logo"
-            className="h-9 w-9 rounded-lg shadow-sm"
+            src="/assets/chaser-wordmark.jpeg"
+            alt="Chaser"
+            className="h-9 w-auto mix-blend-multiply sm:h-10"
           />
-          <span className="font-display text-xl font-extrabold tracking-tight text-pine">
-            Chaser
-          </span>
         </Link>
 
         <nav className="hidden items-center gap-8 md:flex">
