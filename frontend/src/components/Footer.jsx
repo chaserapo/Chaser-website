@@ -72,7 +72,7 @@ const Footer = () => (
 
       <div className="mt-14 flex flex-col gap-2 border-t border-pineline pt-8 text-xs text-mist/50 sm:flex-row sm:items-center sm:justify-between">
         <p>© {new Date().getFullYear()} Midwest Ag Supplies. All rights reserved.</p>
-        <p>Chaser is currently in beta.</p>
+        <p>Launching soon on the App Store.</p>
       </div>
     </div>
   </footer>

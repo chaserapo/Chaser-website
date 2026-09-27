@@ -60,7 +60,7 @@ const Hero = () => {
           >
             <span className="h-2 w-2 animate-pulse rounded-full bg-gold" />
             <span className="font-mono text-xs font-medium uppercase tracking-[0.2em] text-goldhover">
-              Now in beta · Western Australia
+              Launching soon · Western Australia
             </span>
           </motion.div>
 
@@ -93,7 +93,7 @@ const Hero = () => {
               onClick={scrollToBeta}
               className="group inline-flex items-center gap-2 rounded-full bg-pine px-7 py-3.5 text-sm font-semibold text-cream transition-colors duration-200 hover:bg-pinedark"
             >
-              Join the Beta
+              Get Early Access
               <ArrowRight className="h-4 w-4 transition-transform duration-200 group-hover:translate-x-1" />
             </button>
             <Link

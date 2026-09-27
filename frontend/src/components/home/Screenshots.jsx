@@ -92,7 +92,7 @@ const Screenshots = () => {
               );
             })}
             <p className="pt-2 text-xs text-sage/70">
-              Straight from the beta build — no mockups.
+              Straight from the real app — no mockups.
             </p>
           </div>
 

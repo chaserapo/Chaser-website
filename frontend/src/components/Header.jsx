@@ -56,7 +56,7 @@ const Header = () => {
             onClick={() => goToSection("beta")}
             className="rounded-full bg-pine px-5 py-2.5 text-sm font-semibold text-cream transition-colors duration-200 hover:bg-pinedark"
           >
-            Join the Beta
+            Get Early Access
           </button>
         </nav>
 
@@ -99,7 +99,7 @@ const Header = () => {
               onClick={() => goToSection("beta")}
               className="mt-2 rounded-full bg-pine px-5 py-3 text-base font-semibold text-cream transition-colors duration-200 hover:bg-pinedark"
             >
-              Join the Beta
+              Get Early Access
             </button>
           </div>
         </div>

@@ -13,7 +13,7 @@ const inputClass =
 const Support = () => {
   usePageMeta(
     "Support & Contact — Chaser",
-    "Get support, ask questions, or enquire about the Chaser beta testing program."
+    "Get support, ask questions, or get in touch about the Chaser app."
   );
 
   const [form, setForm] = useState({ name: "", email: "", message: "" });
@@ -61,8 +61,8 @@ const Support = () => {
           We're here to help.
         </h1>
         <p className="mt-5 text-lg leading-relaxed text-sage">
-          Questions about the beta, the app, or your data? Send us a message and
-          we'll get back to you — usually within one business day.
+          Questions about the app, your account, or your data? Send us a message
+          and we'll get back to you — usually within one business day.
         </p>
       </motion.div>
 
@@ -86,7 +86,7 @@ const Support = () => {
               chaserapp@outlook.com
             </a>
             <p className="mt-3 text-sm leading-relaxed text-sage">
-              The fastest way to reach the Chaser team for support, beta access or
+              The fastest way to reach the Chaser team for support, early access or
               privacy requests.
             </p>
           </div>
@@ -102,8 +102,8 @@ const Support = () => {
               Western Australia, Australia
             </p>
             <p className="mt-3 text-sm leading-relaxed text-sage">
-              Chaser is currently in beta — if you're part of the program, mention
-              your farm or business name so we can find your account.
+              Mention your farm or business name in your message so we can find
+              your account quickly.
             </p>
           </div>
         </motion.div>

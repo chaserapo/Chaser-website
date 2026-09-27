@@ -28,7 +28,7 @@ const BetaSection = () => {
     setLoading(true);
     try {
       await submitBeta(form);
-      toast.success("You're on the list — we'll be in touch about the beta.");
+      toast.success("You're on the list — we'll let you know as soon as Chaser launches.");
       setForm({ name: "", email: "", farm_name: "", message: "" });
     } catch {
       toast.error("Something went wrong. Please try again or email chaserapp@outlook.com.");
@@ -47,15 +47,16 @@ const BetaSection = () => {
           transition={{ duration: 0.7, ease: EASE }}
         >
           <p className="font-mono text-xs uppercase tracking-[0.2em] text-gold">
-            Beta program
+            Launching soon
           </p>
           <h2 className="mt-4 font-display text-3xl font-bold leading-tight tracking-tight text-cream sm:text-4xl lg:text-5xl">
-            Chaser is currently in beta.
+            Chaser is heading to the App Store.
           </h2>
           <p className="mt-5 max-w-lg text-lg leading-relaxed text-mist/75">
-            We're onboarding a small group of Western Australian farming operations
-            first. Register your interest and we'll be in touch as spots open up —
-            founding beta farms help shape what Chaser becomes.
+            Chaser has been built and tested alongside real Western Australian
+            farming operations, and is now on its way through App Store review.
+            Register your interest and we'll let you know the moment it's live —
+            no obligation, no waitlist queue.
           </p>
 
           <div className="mt-9 flex flex-wrap gap-4">
@@ -168,7 +169,7 @@ const BetaSection = () => {
               )}
             </button>
             <p className="text-center text-xs text-mist/50">
-              We'll only use your details to contact you about the beta. See our{" "}
+              We'll only use your details to let you know when Chaser launches. See our{" "}
               <Link to="/privacy" className="underline transition-colors duration-200 hover:text-cream">
                 Privacy Policy
               </Link>

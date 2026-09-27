@@ -2,7 +2,7 @@ import { usePageMeta } from "@/hooks/usePageMeta";
 import { motion } from "framer-motion";
 
 const INTRO =
-  "These Terms govern your use of Chaser. By creating an account or using Chaser you agree to these Terms. Chaser is operated by Midwest Ag Supplies (ABN 21 510 804 128), Morley, WA 6032, Australia. This document is provided for the Beta program only.";
+  "These Terms govern your use of Chaser. By creating an account or using Chaser you agree to these Terms. Chaser is operated by Midwest Ag Supplies (ABN 21 510 804 128), Morley, WA 6032, Australia.";
 
 const SECTIONS = [
   {
@@ -30,31 +30,35 @@ const SECTIONS = [
   },
   {
     title: "4. Your account & team",
-    body: "You are responsible for keeping your login secure and for the actions of everyone you invite to your farm business. Owners can invite, remove and change the roles of team members. Removing a member revokes their access to the business's data immediately.",
+    body: "You are responsible for keeping your login secure and for the actions of everyone you invite to your farm business. Owners can invite, remove and change the roles of team members. Removing a member revokes their access to the business's data immediately. You can delete your own Chaser account at any time from within the app (More → Account → Delete my account).",
   },
   {
-    title: "5. Acceptable use",
+    title: "5. Subscription & billing",
+    body: 'Chaser offers a free trial from when your business account is created, after which continued access requires a paid auto-renewing subscription billed through the Apple App Store at the price shown at sign-up (currently $14.99 AUD/month, subject to change for future subscribers). Payment is charged to your Apple ID account at confirmation of purchase. Your subscription automatically renews unless auto-renew is turned off at least 24 hours before the end of the current billing period, and your account will be charged for renewal within that 24-hour window at the then-current price. You can manage or cancel your subscription, and turn off auto-renewal, at any time in your device\'s App Store account settings — doing so does not refund any unused portion of a current period. If you don\'t cancel before the free trial ends, it converts automatically into a paid subscription.',
+  },
+  {
+    title: "6. Acceptable use",
     body: "You will not: (a) upload data you don't have the right to store, (b) use Chaser to breach agricultural, environmental or chemical regulations, (c) attempt to bypass row-level security or access another business's data, (d) reverse engineer or scrape the service, or (e) resell access to Chaser without our written consent.",
   },
   {
-    title: "6. Availability",
-    body: 'Chaser is provided "as is" during Beta. We aim for high availability but do not guarantee uninterrupted service. Planned maintenance, network outages, or upstream provider outages (Supabase, Open-Meteo, Resend) may temporarily interrupt access. Chaser stores an offline copy of your active spray job so a temporary outage does not lose your data.',
+    title: "7. Availability",
+    body: 'Chaser is provided "as is". We aim for high availability but do not guarantee uninterrupted service. Planned maintenance, network outages, or upstream provider outages (Supabase, Railway, Open-Meteo, Resend, Emergent, Expo) may temporarily interrupt access. Chaser stores an offline copy of your active spray job so a temporary outage does not lose your data.',
   },
   {
-    title: "7. Limitation of liability",
+    title: "8. Limitation of liability",
     body: "To the maximum extent permitted by Australian law, Chaser is not liable for any loss (including loss of crop, revenue, business, data, chemical spend, drift damage, regulatory penalty or personal injury) arising from your use of Chaser or from any decision you made in reliance on information displayed by Chaser. Nothing in these Terms excludes any non-excludable statutory rights you may have under the Australian Consumer Law.",
   },
   {
-    title: "8. Termination",
-    body: "You may stop using Chaser and request deletion of your data at any time by contacting chaserapp@outlook.com. We may suspend or terminate an account that breaches these Terms, subject to reasonable notice unless there is an active security or legal issue.",
+    title: "9. Termination",
+    body: "You may stop using Chaser and delete your account at any time (More → Account → Delete my account), or request deletion of your data by contacting chaserapp@outlook.com. We may suspend or terminate an account that breaches these Terms, subject to reasonable notice unless there is an active security or legal issue.",
   },
   {
-    title: "9. Governing law",
+    title: "10. Governing law",
     body: "These Terms are governed by the laws of Western Australia, Australia. You submit to the non-exclusive jurisdiction of the courts of Western Australia and Australia.",
   },
   {
-    title: "10. Changes to these Terms",
-    body: "We will announce material changes inside the app. Continued use of Chaser after a change means you accept the updated Terms.",
+    title: "11. Changes to these Terms",
+    body: "We will announce material changes inside the app and update this page. Continued use of Chaser after a change means you accept the updated Terms.",
   },
 ];
 
@@ -76,7 +80,7 @@ const Terms = () => {
           Terms of Use
         </h1>
         <p className="mt-3 text-sm text-sage">
-          Beta program · Applies to the Chaser app and this website
+          Effective September 2026 · Applies to the Chaser app and this website
         </p>
         <p className="mt-6 leading-relaxed text-sage">{INTRO}</p>
       </motion.div>

@@ -10,7 +10,7 @@ export const submitContact = (data) => axios.post(`${API}/contact`, data);
 const SITE_EMAIL = "chaserapp@outlook.com";
 
 export const mailtoBeta = ({ name, email, farm_name, message }) => {
-  const subject = encodeURIComponent(`Chaser beta registration — ${farm_name}`);
+  const subject = encodeURIComponent(`Chaser early access — ${farm_name}`);
   const body = encodeURIComponent(
     `Name: ${name}\nEmail: ${email}\nFarm / business: ${farm_name}\n\n${message || ""}`
   );

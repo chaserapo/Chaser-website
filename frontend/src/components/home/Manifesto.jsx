@@ -12,7 +12,7 @@ const CHAPTERS = [
   {
     n: "02",
     title: "Job planning & tracking",
-    text: "Plan the week, assign the work and see what's done. Seeding, spraying, spreading — tracked as it actually happens.",
+    text: "Plan the week, assign the work and see what's done — with product costs and mode-of-action rotation warnings tracked in the background so nothing catches you out later.",
     img: "https://images.unsplash.com/photo-1666631740049-5643ffd94b7c?crop=entropy&cs=srgb&fm=jpg&q=85&w=900",
   },
   {
@@ -29,6 +29,12 @@ const CHAPTERS = [
   },
   {
     n: "05",
+    title: "Machinery & fault reporting",
+    text: "Fleet hours, servicing schedules and due-soon flags in one place, with photo fault reports pinned right where the problem is.",
+    img: null,
+  },
+  {
+    n: "06",
     title: "Works with real ag operations",
     text: "Chaser is shaped alongside working Western Australian farming operations, not dreamed up in an office.",
     img: "https://images.unsplash.com/photo-1741874299706-2b8e16839aaa?crop=entropy&cs=srgb&fm=jpg&q=85&w=900",
@@ -50,7 +56,7 @@ const Manifesto = () => (
         The whole operation, in your pocket.
       </h2>
       <p className="mt-5 max-w-xl text-lg leading-relaxed text-sage">
-        Five things Chaser does quietly well, so you can get on with the work.
+        Six things Chaser does quietly well, so you can get on with the work.
       </p>
     </motion.div>
 

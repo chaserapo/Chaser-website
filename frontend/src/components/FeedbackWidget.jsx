@@ -16,7 +16,7 @@ const FeedbackWidget = () => {
   const onSubmit = async (e) => {
     e.preventDefault();
     if (loading) return;
-    const payload = { ...form, topic: "beta feedback" };
+    const payload = { ...form, topic: "website feedback" };
     if (!HAS_BACKEND) {
       mailtoContact(payload);
       toast.success("Opening your email app — just press send.");
@@ -51,9 +51,9 @@ const FeedbackWidget = () => {
           >
             <div className="flex items-start justify-between">
               <div>
-                <p className="font-display text-base font-bold text-pine">Beta feedback</p>
+                <p className="font-display text-base font-bold text-pine">Feedback</p>
                 <p className="mt-0.5 text-xs leading-relaxed text-sage">
-                  Testing the beta? Tell us what's working and what isn't.
+                  Using Chaser? Tell us what's working and what isn't.
                 </p>
               </div>
               <button
@@ -112,7 +112,7 @@ const FeedbackWidget = () => {
         className="flex items-center gap-2 rounded-full bg-pine px-4 py-2.5 text-sm font-semibold text-cream shadow-lg transition-colors duration-200 hover:bg-pinedark"
       >
         <MessageSquare className="h-4 w-4" />
-        Beta feedback
+        Feedback
       </button>
     </div>
   );
