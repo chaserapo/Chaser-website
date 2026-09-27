@@ -3,6 +3,8 @@ import { Sprout } from "lucide-react";
 const ITEMS = [
   "Behind every good operation",
   "Paddock boundaries",
+  "Weather intelligence",
+  "Chemical register",
   "Job planning & tracking",
   "Team visibility",
   "Less paperwork",

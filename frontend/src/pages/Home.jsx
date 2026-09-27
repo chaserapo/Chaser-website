@@ -4,6 +4,8 @@ import { usePageMeta } from "@/hooks/usePageMeta";
 import Hero from "@/components/home/Hero";
 import Marquee from "@/components/Marquee";
 import Manifesto from "@/components/home/Manifesto";
+import Weather from "@/components/home/Weather";
+import ChemicalRegister from "@/components/home/ChemicalRegister";
 import Screenshots from "@/components/home/Screenshots";
 import WhyChaser from "@/components/home/WhyChaser";
 import BetaSection from "@/components/home/BetaSection";
@@ -13,7 +15,7 @@ const Home = () => {
 
   usePageMeta(
     "Chaser — Behind every good operation",
-    "Chaser helps farming operations organise paddocks, jobs, people and day-to-day work from one simple app. Built by Midwest Ag Supplies in Western Australia."
+    "Chaser helps farm owners, managers and contractors organise paddocks, jobs and people — with six-model weather intelligence, a full chemical register with resistance warnings and low-stock quoting, and built-in spray rate, Delta-T, tank mix and nozzle calculators. Built by Midwest Ag Supplies in Western Australia."
   );
 
   useEffect(() => {
@@ -31,6 +33,8 @@ const Home = () => {
       <Hero />
       <Marquee />
       <Manifesto />
+      <Weather />
+      <ChemicalRegister />
       <Screenshots />
       <WhyChaser />
       <BetaSection />

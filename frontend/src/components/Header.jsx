@@ -4,6 +4,7 @@ import { Menu, X } from "lucide-react";
 
 const SECTIONS = [
   { label: "The Paddock", hash: "paddock", testid: "nav-link-paddock" },
+  { label: "Weather", hash: "weather", testid: "nav-link-weather" },
   { label: "The App", hash: "app", testid: "nav-link-app" },
   { label: "Why Chaser", hash: "why", testid: "nav-link-why" },
 ];

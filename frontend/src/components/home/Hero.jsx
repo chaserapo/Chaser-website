@@ -112,7 +112,7 @@ const Hero = () => {
             transition={{ duration: 0.8, delay: 0.9 }}
             className="mt-8 font-mono text-xs uppercase tracking-[0.18em] text-sage"
           >
-            Built by Midwest Ag Supplies · For real ag operations
+            Built by Midwest Ag Supplies · For owners, managers & contractors
           </motion.p>
         </div>
 
