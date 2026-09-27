@@ -12,7 +12,7 @@ const CHAPTERS = [
   {
     n: "02",
     title: "Job planning & tracking",
-    text: "Plan the week, assign the work and see what's done — with product costs and mode-of-action rotation warnings tracked in the background so nothing catches you out later.",
+    text: "Plan the week, assign the work and see what's done — with costs and mode-of-action rotation warnings tracked quietly in the background.",
     img: "/assets/manifesto/seeding-rig.jpg",
     imgAlt: "A John Deere tractor towing an air seeder, with a chaser bin and grain truck alongside, seeding a paddock in Western Australia",
   },
@@ -32,13 +32,13 @@ const CHAPTERS = [
   {
     n: "05",
     title: "Machinery & fault reporting",
-    text: "Fleet hours, servicing schedules and due-soon flags in one place, with photo fault reports pinned right where the problem is.",
+    text: "Fleet hours, servicing schedules and due-soon flags in one place, with photo fault reports logged straight to the paddock or machine.",
     img: null,
   },
   {
     n: "06",
     title: "Works with real ag operations",
-    text: "Chaser is shaped alongside working Western Australian farming operations, not dreamed up in an office.",
+    text: "Chaser is shaped alongside real Western Australian farming operations — not dreamed up in an office.",
     img: "/assets/manifesto/dog-paddock.jpg",
     imgAlt: "A farm dog standing in a lush green cereal paddock with gum trees on the horizon, Western Australia",
   },
