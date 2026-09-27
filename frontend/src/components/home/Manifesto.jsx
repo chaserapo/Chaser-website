@@ -13,13 +13,15 @@ const CHAPTERS = [
     n: "02",
     title: "Job planning & tracking",
     text: "Plan the week, assign the work and see what's done — with product costs and mode-of-action rotation warnings tracked in the background so nothing catches you out later.",
-    img: "https://images.unsplash.com/photo-1666631740049-5643ffd94b7c?crop=entropy&cs=srgb&fm=jpg&q=85&w=900",
+    img: "/assets/manifesto/seeding-rig.jpg",
+    imgAlt: "A John Deere tractor towing an air seeder, with a chaser bin and grain truck alongside, seeding a paddock in Western Australia",
   },
   {
     n: "03",
     title: "Mapping & paddock boundaries",
     text: "Your paddocks on a map, with boundaries drawn the way you actually farm them — not the way a desk in the city imagines.",
-    img: "https://images.unsplash.com/photo-1588186879741-889eb26e549f?crop=entropy&cs=srgb&fm=jpg&q=85&w=900",
+    img: "/assets/manifesto/spraying-aerial.jpg",
+    imgAlt: "Aerial view of a self-propelled boom sprayer working a paddock, showing the sprayed boundary line against the crop",
   },
   {
     n: "04",
@@ -37,7 +39,8 @@ const CHAPTERS = [
     n: "06",
     title: "Works with real ag operations",
     text: "Chaser is shaped alongside working Western Australian farming operations, not dreamed up in an office.",
-    img: "https://images.unsplash.com/photo-1741874299706-2b8e16839aaa?crop=entropy&cs=srgb&fm=jpg&q=85&w=900",
+    img: "/assets/manifesto/dog-paddock.jpg",
+    imgAlt: "A farm dog standing in a lush green cereal paddock with gum trees on the horizon, Western Australia",
   },
 ];
 
@@ -88,7 +91,7 @@ const Manifesto = () => (
             <div className="md:col-span-4">
               <img
                 src={c.img}
-                alt={c.title}
+                alt={c.imgAlt || c.title}
                 loading="lazy"
                 className="aspect-[4/3] w-full rounded-2xl border border-creamline object-cover shadow-md"
               />
