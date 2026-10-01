@@ -66,6 +66,13 @@ const Footer = () => (
             >
               Support
             </Link>
+            <Link
+              to="/delete-account"
+              data-testid="footer-delete-account-link"
+              className="text-sm text-mist/80 transition-colors duration-200 hover:text-cream"
+            >
+              Delete Account
+            </Link>
           </div>
         </div>
       </div>
