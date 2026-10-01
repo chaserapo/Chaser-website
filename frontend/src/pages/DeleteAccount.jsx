@@ -48,10 +48,12 @@ const DeleteAccount = () => {
             ))}
           </ol>
           <p className="mt-3 leading-relaxed text-sage">
-            This removes your login and your membership of any farm business. To also
-            have your farm business's data (farms, paddocks, machinery, spray records,
-            etc.) permanently deleted rather than just left inaccessible, email us as
-            described below.
+            This removes your login immediately. If you're the sole owner of a farm
+            business, it also immediately and permanently deletes that business's
+            farm data (farms, paddocks, machinery, spray records, chemicals, and
+            everything else tied to it) — this cannot be undone. If you're a team
+            member rather than a sole owner, only your own login and membership are
+            removed; the business and its data are unaffected.
           </p>
         </motion.section>
 
@@ -89,9 +91,10 @@ const DeleteAccount = () => {
           <p className="mt-3 leading-relaxed text-sage">
             Your login, profile, and (if you're a sole business owner) all farm data
             tied to that business — farms, paddocks, machinery, maintenance records,
-            chemicals, spray jobs and tank mixes. Deleted records are soft-deleted for
-            up to 30 days to allow recovery from accidental deletion, then permanently
-            removed. Backups may retain data for up to 90 days. See our{" "}
+            chemicals, spray jobs and tank mixes — are deleted immediately and
+            permanently; there is no recovery window for a full account deletion, so
+            make sure it's what you want first. Backups may retain data for up to 90
+            days. See our{" "}
             <a
               href="/privacy"
               className="font-semibold text-goldhover underline decoration-gold/40 underline-offset-4 transition-colors duration-200 hover:text-gold"
