@@ -16,7 +16,7 @@ const SECTIONS = [
       "Weather data: retrieved from the public Open-Meteo API using the coordinates of your current location.",
       "Team invitations: when you invite a team member we send a one-time invitation email to the address you provide via our email service providers (Resend and Emergent).",
       "Push notification token: if you enable notifications, we store your device's push token to deliver weather and maintenance alerts, via Expo's push notification service.",
-      "Subscription status: Chaser offers a free trial, then requires a paid subscription. Apple's App Store handles your payment directly — we never see or store your card details, only whether your subscription is active.",
+      "Subscription status: Chaser offers a free trial, then requires a paid subscription. The Apple App Store or Google Play Store (depending on your device) handles your payment directly — we never see or store your card details, only whether your subscription is active.",
     ],
   },
   {
@@ -29,7 +29,7 @@ const SECTIONS = [
   },
   {
     title: "4. Who can see your data",
-    body: "Only you and the team members you have invited (and accepted) into your farm business can read your farm data. Chaser support staff can, with your consent, access your data to investigate a support request. Separately, our backend runs limited automated processes — such as checking whether a weather or maintenance condition you've asked to be alerted about has been met — that read across businesses only for that narrow purpose; this is an automated process, not manual access by a person. Sub-processors are: Supabase (database, authentication), Railway (backend hosting), Open-Meteo (weather lookup — coordinates only, no account), Resend and Emergent (transactional email delivery), Expo (push notification delivery), and Apple (App Store subscription billing).",
+    body: "Only you and the team members you have invited (and accepted) into your farm business can read your farm data. Chaser support staff can, with your consent, access your data to investigate a support request. Separately, our backend runs limited automated processes — such as checking whether a weather or maintenance condition you've asked to be alerted about has been met — that read across businesses only for that narrow purpose; this is an automated process, not manual access by a person. Sub-processors are: Supabase (database, authentication), Railway (backend hosting), Open-Meteo (weather lookup — coordinates only, no account), Resend and Emergent (transactional email delivery), Expo (push notification delivery), and Apple and/or Google (App Store / Google Play subscription billing, depending on your device).",
   },
   {
     title: "5. Location, camera & other permissions",
