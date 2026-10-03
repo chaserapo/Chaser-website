@@ -4,9 +4,9 @@
     { "source": "/spray/:path((?:[^/]+/)*[^/.]+)", "destination": "/spray/:path/", "permanent": true }
   ],
   "rewrites": [
-    { "source": "/spray/", "destination": "https://chaserapo.github.io/Chaser-App/spray/" },
-    { "source": "/spray/:path*/", "destination": "https://chaserapo.github.io/Chaser-App/spray/:path*/" },
-    { "source": "/spray/:path*", "destination": "https://chaserapo.github.io/Chaser-App/spray/:path*" },
+    { "source": "/spray/", "destination": "https://chaser-spray-window.vercel.app/spray/" },
+    { "source": "/spray/:path*/", "destination": "https://chaser-spray-window.vercel.app/spray/:path*/" },
+    { "source": "/spray/:path*", "destination": "https://chaser-spray-window.vercel.app/spray/:path*" },
     { "source": "/(.*)", "destination": "/index.html" }
   ]
 }

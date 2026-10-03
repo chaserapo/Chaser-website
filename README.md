@@ -37,10 +37,11 @@ load directly on the domain (required for App Store / Google Play review URLs).
 ## Spray Window at /spray
 
 `/spray/*` is served from the Spray Window site, which is built twice daily by the
-`Spray Window` GitHub Action in `chaserapo/Chaser-App` and hosted on GitHub Pages.
-`frontend/vercel.json` proxies those paths (visitors only ever see this domain) and
-adds the trailing slash to folder URLs so GitHub Pages never redirects to its own
-address. The `/spray` rules must stay above the SPA catch-all rewrite.
+`Spray Window` GitHub Action in `chaserapo/Chaser-App` and deployed to its own Vercel
+project, `chaser-spray-window`. `frontend/vercel.json` proxies those paths (visitors
+only ever see this domain) and adds the trailing slash to folder URLs. If that
+project's address isn't `chaser-spray-window.vercel.app`, update the three rewrites.
+The `/spray` rules must stay above the SPA catch-all rewrite.
 
 ## Forms on the static site
 
