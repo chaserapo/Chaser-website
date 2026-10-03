@@ -1,3 +1,12 @@
 {
-  "rewrites": [{ "source": "/(.*)", "destination": "/index.html" }]
+  "redirects": [
+    { "source": "/spray", "destination": "/spray/", "permanent": true },
+    { "source": "/spray/:path((?:[^/]+/)*[^/.]+)", "destination": "/spray/:path/", "permanent": true }
+  ],
+  "rewrites": [
+    { "source": "/spray/", "destination": "https://chaserapo.github.io/Chaser-App/spray/" },
+    { "source": "/spray/:path*/", "destination": "https://chaserapo.github.io/Chaser-App/spray/:path*/" },
+    { "source": "/spray/:path*", "destination": "https://chaserapo.github.io/Chaser-App/spray/:path*" },
+    { "source": "/(.*)", "destination": "/index.html" }
+  ]
 }
