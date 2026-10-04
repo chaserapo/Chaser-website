@@ -34,6 +34,15 @@ load directly on the domain (required for App Store / Google Play review URLs).
 3. HTTPS is provisioned automatically once DNS propagates (usually minutes, up to 24h)
 4. Confirm these load: `https://chaserag.com.au/privacy`, `/terms`, `/support`
 
+## Spray Window at /spray
+
+`/spray/*` is served from the Spray Window site, which is built twice daily by the
+`Spray Window` GitHub Action in `chaserapo/Chaser-App` and deployed to its own Vercel
+project, `chaser-spray-window`. `frontend/vercel.json` proxies those paths (visitors
+only ever see this domain) and adds the trailing slash to folder URLs. If that
+project's address isn't `chaser-spray-window.vercel.app`, update the three rewrites.
+The `/spray` rules must stay above the SPA catch-all rewrite.
+
 ## Forms on the static site
 
 The beta and contact forms open the visitor's email app pre-addressed to
