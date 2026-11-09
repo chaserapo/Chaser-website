@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
-import { ClipboardList, QrCode, Tractor, Calculator } from "lucide-react";
+import { ClipboardList, QrCode, Tractor, Calculator, BarChart3 } from "lucide-react";
 
 const EASE = [0.16, 1, 0.3, 1];
 
@@ -36,6 +36,14 @@ const TABS = [
     icon: Calculator,
     img: "/assets/screens/tools.jpg",
     testid: "screenshot-tab-tools",
+  },
+  {
+    id: "reports",
+    label: "Reports",
+    desc: "Pick a job type and date range, select the jobs you want, and see hectares, cost and more at a glance.",
+    icon: BarChart3,
+    img: "/assets/screens/reports.jpg",
+    testid: "screenshot-tab-reports",
   },
 ];
 
